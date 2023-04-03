@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1680482338 source:/home/eslam/Templates/C_Projects/MagicBox/main.c
+	<stdio.h>
+	<stdlib.h>
+
+1680465518 source:/home/eslam/Templates/C_Projects/MagicBox/MyNav.c
+
