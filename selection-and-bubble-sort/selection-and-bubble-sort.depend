@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1681338375 source:/home/eslamyasser/projects/C lang/selection-and-bubble-sort/main.c
+	"ext.h"
+
+1681338854 source:/home/eslamyasser/projects/C lang/selection-and-bubble-sort/functions.c
+	<stdio.h>
+	<stdlib.h>
+	"ext.h"
+
+1681338484 /home/eslamyasser/projects/C lang/selection-and-bubble-sort/ext.h
+

@@ -1,0 +1,16 @@
+
+#include "ext.h"
+#define n 10
+
+
+int main()
+{
+    int arr[n]={1551,254,321,154,105,685,12158,148,15472,10};
+    //to reaarange the array
+    bubbleSorting(arr, n);
+    printArrays(arr, n);
+    printf("Selection sort")
+    seclectionSorting(arr, n);
+    rintArrays(arr, n);
+return 0;
+}

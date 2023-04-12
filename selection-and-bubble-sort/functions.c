@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "ext.h"
+#define INIT 0
+
+
+void swapp (int* first, int* second)
+{
+    int temp = *first;
+    *first = *second;
+    *second = temp;
+}
+
+
+void printArrays(int shwArr[],int n)
+{
+    printf("{ ");
+    for(int j = INIT; j < n; j++)
+    {
+        printf("%d ",shwArr[j]);
+    }
+    printf(" }");
+}
+
+/// BubbleSorting(Array[] , Array Size) ---------------------------------
+void bubbleSorting(int arr[],int n)
+{
+    for(int x = INIT; x<n-1; x++)
+    {
+        for(int i = INIT; i<n-x-1; i++)
+        {
+            if(arr[i]>arr[i+1])
+            {
+                swapp(&arr[i],&arr[i+1]);
+            }
+        }
+    }
+}//bubbleSorting
+
+
+///----------------Selection Sorting ---------------
+void seclectionSorting(int arr[], int n)    // Time Compexity : O(n * n) due to 2 nested loops
+{                                           //Auxiliary Space: O(n)
+
+    int i,j,minIDX;
+
+        // One by one move boundary of unsorted subarray
+    for(i = 0; i < n - 1; i++)
+
+    {   // Getting the minmium Element
+        minIDX = i;
+        for(j = 0; j < n ; j++)
+        {
+            if(arr[j]< minIDX) minIDX = j;
+        }
+
+        // Swap the found minimum element with the first element
+        if(minIDX != i) swapp(&arr[minIDX], &arr[i]);
+    }
+}
+
+

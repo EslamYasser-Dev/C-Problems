@@ -1,0 +1,5 @@
+#ifndef
+#define ext.h
+void swapp (int* first, int* second);
+void printArrays (int shwArr[]);
+#endif
